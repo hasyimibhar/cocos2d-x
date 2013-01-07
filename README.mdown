@@ -4,6 +4,8 @@ cocos2d-x
 [cocos2d-x][1] is a multi-platform 2D game engine in C++, based on [cocos2d-iphone][2] and licensed under MIT.
 Now this engine has been expanded to iOS, Android, Bada, BlackBerry, Marmalade and desktop operating systems like Linux, WindowsXP & Windows7. 
 
+This is a version with CMake build system, based on [ReubenBond's work](https://github.com/ReubenBond/cocos2d-x).
+
 Multi Platform
 -------------
    * iOS:  stable, well tested on iOS 4.x ~ 5.x SDK.
