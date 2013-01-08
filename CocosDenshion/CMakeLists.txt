@@ -2,7 +2,7 @@ CMAKE_MINIMUM_REQUIRED (VERSION 2.8)
 
 # Set up the environment.
 SET (SRC ${CMAKE_CURRENT_SOURCE_DIR})
-SET (PROJ "cocosdenshion")
+SET (PROJ "CocosDenshion")
 
 PROJECT (${PROJ})
 
@@ -158,3 +158,6 @@ ENDFOREACH (item)
 # Create a module configuration file for this project.
 CONFIGURE_FILE (${CMAKE_SOURCE_DIR}/CMake/Modules/FindModule.cmake.in
 	${CMAKE_BINARY_DIR}/CMake/Modules/Find${PROJ}.cmake)
+
+# Make this variable visible to the parent.
+SET (${PROJ}_INCLUDE_DIRS ${${PROJ}_INCLUDE_DIRS} PARENT_SCOPE)

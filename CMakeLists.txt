@@ -20,5 +20,13 @@ MESSAGE (STATUS "Bitness is ${bitness}")
 SET (cocos2dx_SOURCE_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/cocos2dx)
 
 ADD_SUBDIRECTORY (cocos2dx)
+# Make this variable visible to the parent.
+SET (cocos2dx_INCLUDE_DIRS ${cocos2dx_INCLUDE_DIRS} PARENT_SCOPE)
+
 ADD_SUBDIRECTORY (extensions)
+# Make this variable visible to the parent.
+SET (extensions_INCLUDE_DIRS ${extensions_INCLUDE_DIRS} PARENT_SCOPE)
+
 ADD_SUBDIRECTORY (CocosDenshion)
+# Make this variable visible to the parent.
+SET (CocosDenshion_INCLUDE_DIRS ${CocosDenshion_INCLUDE_DIRS} PARENT_SCOPE)
